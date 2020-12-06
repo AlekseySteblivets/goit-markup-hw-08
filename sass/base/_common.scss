@@ -1,0 +1,48 @@
+/* для  стилей  общего пользования */ 
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-text-cl;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* класс для всех ссылок <a>, убираем подчеркивание и задаем цвет */
+.link{
+    text-decoration: none;
+    color: inherit;
+    transition: color $time-transition;
+
+
+    &:focus,
+    &:hover {
+        color: $accent-cl;
+    }
+}
+
+
+/* стандартный набор стилей для container, еще можно добавить padding left b right
+ если есть*/
+ .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+}

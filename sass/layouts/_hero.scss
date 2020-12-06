@@ -1,0 +1,56 @@
+.dark-bg-hero {
+    background-color: $bg-dark-cl;
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+    background-image: linear-gradient(to right,  rgba(47, 48, 58, 0.4),  
+        rgba(47, 48, 58, 0.4)), url("../images/hero.jpg"); 
+    background-size: cover;
+    background-position: center;
+
+}
+
+.button-hero {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.text-button-hero {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    color: $wight-text-cl;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+
+/* класс для заголовка страницы h1 */
+.page-title{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $wight-text-cl;
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-left: 452px;
+    padding-bottom: 30px;
+    margin: 0px;
+}

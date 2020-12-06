@@ -1,0 +1,105 @@
+.form-label {
+    display: inline-block;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.form-input {
+    display: inline-block;
+    width: 448px;
+    height: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-left: 35px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color $time-transition;
+}
+
+
+.form-textarea {
+    display: inline-block;
+    /* resize: none; */
+    width: 448px;
+    height: 120px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color $time-transition;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-input:focus + .modal-icons-svg {
+    fill: $accent-cl;
+}
+
+.form-input:focus,
+.form-input:hover,
+.form-textarea:focus,
+.form-textarea:hover {
+    border-color: $accent-cl;
+}
+
+.check-class {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px ;
+    overflow: hidden;
+
+    &:checked + .checkbox-icon {
+        background-color: $accent-cl;
+        background-image: url(../images/check-active.svg);
+        /* fill: $accent-cl; */
+        background-size: cover;
+        
+    }
+}
+
+.checkbox-icon {
+    position: absolute;
+    top: 24px;
+    left: 51px;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/checkbox.svg);
+    background-position: center;
+    z-index: -1;
+}
+
+
+
+.check-label {
+    display: inline-block;
+    padding-left: 77px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.color-check-text {
+    color: $accent-cl;
+    text-decoration: underline;
+}

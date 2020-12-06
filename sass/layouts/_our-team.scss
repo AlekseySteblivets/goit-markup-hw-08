@@ -1,0 +1,47 @@
+.container-our-team{
+    background-color: $bg-section-cl;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* класс для ul в сетке*/
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* класс для описания пунктов членов команды /* класс для  li в сетке */
+.team-item {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit;
+    background-color: $wight-text-cl;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+
+    &:last-child {
+        margin-right: 0px;
+    }
+    & img{
+        margin-bottom: 30px;
+    }
+    
+    & p {
+        margin-bottom: 16px;
+        margin-top: 0px;
+    }
+
+}
+
+/* класс который относится для заголовков h3 на странице студио (имена сотрудников)*/
+.team-name-tittle{
+    font-weight: 500;
+    color: $title-text-cl;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    line-height: 20px;
+}

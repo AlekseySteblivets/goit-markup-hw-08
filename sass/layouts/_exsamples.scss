@@ -1,0 +1,50 @@
+.section-title-exsamples {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-cl;
+    margin-bottom: 50px;
+    margin-top: 0px; 
+}
+
+.exsamles-works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exsamples-item {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+
+
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+
+.layers {
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+
+
+    & p {
+        font-weight: bold;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: $wight-text-cl;
+        margin: 0px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+}

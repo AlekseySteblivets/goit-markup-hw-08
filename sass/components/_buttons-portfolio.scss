@@ -1,0 +1,54 @@
+.btn {
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-cl;
+    border-radius: 4px;
+    background-color: $bg-section-cl;
+    padding: 0px;
+    margin-right: 8px;
+    border: 0px;
+    transition: background-color $time-transition;
+    &:hover,
+    &:focus {
+        background-color: $accent-cl;
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+.but-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+}
+
+    
+
+.text-but-portfolio {
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-cl;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    transition: color $time-transition;
+
+    &:hover,
+    &:focus {
+        color: $wight-text-cl;
+    }
+}

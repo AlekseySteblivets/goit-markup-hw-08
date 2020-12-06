@@ -1,0 +1,85 @@
+.modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 4px;
+    background-color: $wight-text-cl;
+    transition: transform $time-transition;
+}
+
+.backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+.close-btn {
+    position: absolute;
+    display: inline-block;
+    right: 8px;
+    top: 8px;
+    background-color: var ($wight-text-cl);
+    /* border: 0; */
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+
+    &:hover .close-icon {
+        fill: $accent-cl;
+    }
+}
+
+
+.close-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    transition: fill $time-transition;
+}
+
+
+.title-modal {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-cl;
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.modal-icons-svg {
+    position: absolute;
+    top: 38px;
+    left: 50px;
+    width: 18px;
+    height: 18px;
+    fill: $title-text-cl;
+    transition: fill $time-transition;  
+}
+
+.modal-blocks {
+    position: relative;
+}
