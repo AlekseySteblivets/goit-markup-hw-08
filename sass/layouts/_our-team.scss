@@ -1,4 +1,4 @@
-.container-our-team{
+.container-our-team {
     background-color: $bg-section-cl;
     margin-left: auto;
     margin-right: auto;
@@ -6,8 +6,10 @@
 
 /* класс для ul в сетке*/
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
+    @include for-size(tablet) {
+        display: flex;
+        flex-wrap: wrap;   
+    }
 }
 
 /* класс для описания пунктов членов команды /* класс для  li в сетке */
@@ -18,14 +20,31 @@
     letter-spacing: 0.03em;
     color: inherit;
     background-color: $wight-text-cl;
-    margin-right: 30px;
+    margin-right: 0px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    /* добавил делая стили для мобайл*/
+    margin-bottom: 30px;
 
-
-    &:last-child {
-        margin-right: 0px;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        // margin-right: 30px;
+        width: calc(100% / 2 - 30px);
+        margin-right: 30px;
     }
+
+    // &:nth-last-child(-n + 2) {
+    // // @media screen and (min-width:480px) and (max-width:1199px)
+    //     margin-bottom: 60px;
+    // }
+
+    @include for-size(desktop) {
+    &:last-child {
+        margin-right: 0px;    
+    }
+    
+        /* добавил делая стили для мобайл*/
+        // margin-bottom: 60px;
+
     & img{
         margin-bottom: 30px;
     }
@@ -37,11 +56,12 @@
 
 }
 
+
 /* класс который относится для заголовков h3 на странице студио (имена сотрудников)*/
-.team-name-tittle{
+.team-name-tittle {
     font-weight: 500;
     color: $title-text-cl;
     margin-bottom: 10px;
     margin-top: 0px;
-    line-height: 20px;
+    line-height: 20px; 
 }

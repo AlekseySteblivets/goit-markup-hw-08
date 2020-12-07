@@ -10,6 +10,13 @@
   overflow: hidden;
 }
 
+/* usage
+.my-box {
+    padding: 10px;
+    @include for-size(tablet) {
+      padding: 20px;
+    }
+  } (edited) */
 /* для  стилей  общего пользования */
 body {
   font-family: 'Roboto', sans-serif;
@@ -17,6 +24,14 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+/* добавил этот стиль когда начал делать фест-мобайл подход*/
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 html {
@@ -53,7 +68,25 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .btn {
@@ -114,11 +147,17 @@ img {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .social-icons:not(:last-child) {
   margin-right: 10px;
+}
+
+@media (min-width: 1200px) {
+  .social-icons {
+    padding-bottom: 30px;
+  }
 }
 
 .social-icons-border {
@@ -185,14 +224,22 @@ img {
 .section-title {
   font-family: Roboto;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0px;
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .section {

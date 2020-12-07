@@ -7,6 +7,14 @@ body{
     color: $main-text-cl;
 }
 
+/* добавил этот стиль когда начал делать фест-мобайл подход*/
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    outline: 2px solid red;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -44,5 +52,17 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px;
+    width: 100%;
+
+    @include for-size(mobile) {
+        width: 480px;
+    }
+
+    @include for-size(tablet) {
+        width: 768px;
+    }
+    
+    @include for-size(desktop) {
+        width: 1200px;
+    }
 }

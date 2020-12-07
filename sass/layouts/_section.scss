@@ -2,14 +2,20 @@
 .section-title{
     font-family: Roboto;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-text-cl;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 0px;
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @include for-size (desktop) {
+        font-size: 36px;
+        padding-top: 94px;    
+        margin-bottom: 50px;
+    }
 }
 
 .section {
