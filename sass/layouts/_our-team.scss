@@ -10,7 +10,10 @@
     @include for-size(tablet) {
         display: flex;
         flex-wrap: wrap;   
+        justify-content: space-between;
     }
+
+
 }
 
 /* класс для описания пунктов членов команды /* класс для  li в сетке */
@@ -26,11 +29,15 @@
     border-radius: 0px 0px 4px 4px;
     /* добавил делая стили для мобайл*/
     margin-bottom: 30px;
-}
+
   
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        width: 354px;
+    }
+
 
     @include for-size(desktop) {
-        
+        // margin-right: 15px;
 
     &:last-child {
         margin-right: 0px;    
@@ -46,7 +53,7 @@
         margin-bottom: 16px;
         margin-top: 0px;
     }
-
+    }   
 }
 
 

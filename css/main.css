@@ -809,6 +809,7 @@ img {
   .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -827,15 +828,23 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item {
+    width: 354px;
+  }
+}
+
 @media (min-width: 1200px) {
-  :last-child {
+  .team-item {
+    /* добавил делая стили для мобайл*/
+  }
+  .team-item:last-child {
     margin-right: 0px;
   }
-  /* добавил делая стили для мобайл*/
-  img {
+  .team-item img {
     margin-bottom: 30px;
   }
-  p {
+  .team-item p {
     margin-bottom: 16px;
     margin-top: 0px;
   }
