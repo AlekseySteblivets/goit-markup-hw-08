@@ -642,12 +642,6 @@ img {
   padding-bottom: 0px;
 }
 
-.flex-advantages {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .item-icons-advantages::before {
   content: "";
   display: block;
@@ -783,28 +777,18 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-item {
-    width: calc(100% / 2 - 30px);
+@media (min-width: 1200px) {
+  :last-child {
+    margin-right: 0px;
   }
-}
-
-.team-item:nth-last-child(-n + 2) {
-  margin-bottom: 60px;
-}
-
-.team-item:last-child {
-  margin-right: 0px;
   /* добавил делая стили для мобайл*/
-}
-
-.team-item img {
-  margin-bottom: 30px;
-}
-
-.team-item p {
-  margin-bottom: 16px;
-  margin-top: 0px;
+  img {
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 16px;
+    margin-top: 0px;
+  }
 }
 
 /* класс который относится для заголовков h3 на странице студио (имена сотрудников)*/

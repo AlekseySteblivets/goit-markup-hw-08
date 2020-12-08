@@ -1,3 +1,4 @@
+
 .container-our-team {
     background-color: $bg-section-cl;
     margin-left: auto;
@@ -25,23 +26,15 @@
     border-radius: 0px 0px 4px 4px;
     /* добавил делая стили для мобайл*/
     margin-bottom: 30px;
-
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        // margin-right: 30px;
-        width: calc(100% / 2 - 30px);
-        margin-right: 30px;
-    }
-
-    // &:nth-last-child(-n + 2) {
-    // // @media screen and (min-width:480px) and (max-width:1199px)
-    //     margin-bottom: 60px;
-    // }
+}
+  
 
     @include for-size(desktop) {
+        
+
     &:last-child {
         margin-right: 0px;    
     }
-    
         /* добавил делая стили для мобайл*/
         // margin-bottom: 60px;
 
@@ -65,3 +58,16 @@
     margin-top: 0px;
     line-height: 20px; 
 }
+
+// &:nth-last-child(-n + 2) {
+    // // @media screen and (min-width:480px) and (max-width:1199px)
+    //     margin-bottom: 60px;
+    // }
+
+
+// @media screen and (min-width:768px) and (max-width:1199px) {
+//     // margin-right: 30px;
+//     width: calc(100% / 2 - 30px);
+//     margin-right: 30px;
+// }
+
