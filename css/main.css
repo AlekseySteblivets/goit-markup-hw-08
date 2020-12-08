@@ -642,15 +642,47 @@ img {
   padding-bottom: 0px;
 }
 
+@media (min-width: 768px) {
+  .flex-advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .flex-advantages {
+    flex-wrap: wrap;
+  }
+}
+
 .item-icons-advantages::before {
   content: "";
   display: block;
   height: 120px;
-  width: 270px;
   background-color: #EEEEEE;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .item-icons-advantages::before {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-icons-advantages::before {
+    max-width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item-icons-advantages::before {
+    width: 270px;
+  }
 }
 
 .item-antenna::before {
@@ -680,16 +712,33 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #212121;
   margin-bottom: 10px;
-  margin-right: 30px;
-  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .section-advantages-title {
+    margin-top: 0px;
+    text-align: start;
+  }
 }
 
 .border-advanteges {
-  margin-right: 30px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .border-advanteges {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .border-advanteges {
+    margin-bottom: 0px;
+  }
 }
 
 .last-item h3 {
