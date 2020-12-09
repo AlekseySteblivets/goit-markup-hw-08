@@ -31,7 +31,6 @@ body {
 ::after,
 ::before {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 html {
@@ -454,12 +453,23 @@ img {
 .menu-mobile {
   padding-top: 60px;
   padding-bottom: 60px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ECECEC;
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media (min-width: 768px) {
   .menu-mobile {
     display: none;
   }
+}
+
+.menu-mobile.is-open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-item-mobile:not(:last-child) {
@@ -503,15 +513,29 @@ img {
   background-color: #2196F3;
 }
 
-.menu-link-portfolio::after {
+.menu-link-portfolio-mobile::after {
   content: "";
   position: absolute;
-  bottom: -32px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: #2196F3;
+}
+
+.link-connection-mobile {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.link-connection-mobile:hover > .envelope-svg,
+.link-connection-mobile:hover > .smartphone-svg {
+  fill: #2196F3;
 }
 
 .navigation {

@@ -31,7 +31,6 @@ body {
 ::after,
 ::before {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 html {
