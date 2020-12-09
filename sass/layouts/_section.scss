@@ -19,5 +19,11 @@
 }
 
 .section {
-    padding-bottom: 94px;
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        padding-bottom: 60px;
+        }     
+
+    @include for-size(desktop) {
+        padding-bottom: 94px;
+    }
 }

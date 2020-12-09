@@ -6,9 +6,10 @@
     padding-bottom: 25px;
     position: relative;
 
+    @media screen and (min-width:480px) and (max-width: 1199px) {
     & .logo {
         margin-right: 88px;
-    }
+    }}
     
     @include for-size(desktop) {
             & .logo {
