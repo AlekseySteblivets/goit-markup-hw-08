@@ -31,7 +31,6 @@ body {
 ::after,
 ::before {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 html {
@@ -97,15 +96,20 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  margin-right: 50px;
 }
 
-.menu-link:not(:last-child) {
+.nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .menu {
-  display: inline-flex;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: inline-flex;
+  }
 }
 
 .menu-link-studio::after {
@@ -128,6 +132,25 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: #2196F3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link-navigation .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tablet-item:first-child {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet-item {
+    margin-bottom: 10px;
+  }
 }
 
 .social-icons-svg {
@@ -393,18 +416,21 @@ img {
   position: relative;
 }
 
+@media (min-width: 1200px) {
+  .navigation .logo {
+    margin-right: 93px;
+  }
+}
+
 .navigation .logo {
-  margin-right: 93px;
+  margin-right: 88px;
 }
 
 .link-navigation {
   display: flex;
   align-items: center;
   margin-left: auto;
-}
-
-.link-navigation .link-connection:first-child {
-  margin-right: 50px;
+  margin-right: 0px;
 }
 
 .envelope-svg {
@@ -434,6 +460,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 0px;
 }
 
 .link-connection:hover > .envelope-svg,
@@ -646,7 +673,6 @@ img {
   .flex-advantages {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -835,9 +861,6 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .team-item {
-    /* добавил делая стили для мобайл*/
-  }
   .team-item:last-child {
     margin-right: 0px;
   }
@@ -936,10 +959,17 @@ img {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #2196F3;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .part-logo {
