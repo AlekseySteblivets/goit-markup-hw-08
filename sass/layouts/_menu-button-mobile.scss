@@ -1,0 +1,48 @@
+
+.but-menu-mobile .icon-cross {
+    display: none;
+}
+
+.but-menu-mobile.is-open .icon-cross {
+    display: block;
+}
+
+.but-menu-mobile.is-open .icon-menu {
+    display: none;
+}
+
+.but-menu-mobile {
+    display: block;
+
+    // position: absolute;
+    // display: inline-block;
+    // right: 8px;
+    // top: 8px;
+    background-color: $wight-text-cl;
+    /* border: 0; */
+    padding: 0;
+    cursor: pointer;
+    // border-radius: 50%;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    outline: none;
+
+    @include for-size(tablet) {
+        display: none;
+    }
+
+    &:hover .menu-mobile-svg {
+        fill: $accent-cl;
+    }
+}
+
+
+.menu-mobile-svg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 26px;
+    height: 16px;
+    transition: fill $time-transition;
+}
