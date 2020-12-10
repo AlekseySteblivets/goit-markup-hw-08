@@ -672,7 +672,24 @@ img {
 .futer-social {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+}
+
+@media (min-width: 1200px) {
+  .futer-social {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .futer-social {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .futer-social {
+    align-items: center;
+  }
 }
 
 .futer-social .social-icons-svg {
@@ -686,6 +703,13 @@ img {
 .futer-contacts {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .futer-contacts {
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 
 .futer-social h3, .futer-input-section h3 {
@@ -712,18 +736,35 @@ img {
 .futer-input-section {
   display: flex;
   flex-direction: column;
-  margin-left: 93px;
-  margin-top: -35px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .futer-input-section {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .futer-input-section {
+    margin-top: -35px;
+    margin-left: 93px;
+  }
 }
 
 .futer-form {
   display: flex;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .futer-form {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 .futer-input {
   display: flex;
   padding-left: 16px;
-  width: 358px;
   height: 50px;
   font-weight: normal;
   font-size: 16px;
@@ -734,6 +775,19 @@ img {
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .futer-input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .futer-input {
+    width: 358px;
+  }
 }
 
 .futer-btn {
@@ -788,9 +842,6 @@ img {
   color: #FFFFFF;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
 }
 
 .section-contacts h2 {
@@ -808,6 +859,17 @@ img {
   align-items: center;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-contacts .container {
+    flex-direction: column;
+  }
+}
+
+.contacts-blocks {
+  display: block;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
