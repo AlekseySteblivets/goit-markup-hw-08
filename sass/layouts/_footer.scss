@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        margin-left: auto;    
+    }
+
     @include for-size(desktop) {
         margin-left: 70px;
     }
@@ -57,8 +61,13 @@
     display: flex;
     flex-direction: column;
     
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (min-width:480px) and (max-width:1199px) {
         align-items: center;}
+
+    @media screen and (min-width:768px) and (max-width:1200px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @include for-size (desktop) {
         margin-top: -35px;
