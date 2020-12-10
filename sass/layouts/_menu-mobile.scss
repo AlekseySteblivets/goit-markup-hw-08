@@ -6,8 +6,8 @@
     left: 0;
     right: 0;
     border-top: 1px solid $border-color-menu-mobile;
-    // opacity: 0;
-    // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 
     @include for-size(tablet) {
         display: none;
