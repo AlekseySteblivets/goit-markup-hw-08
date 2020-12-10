@@ -1,15 +1,36 @@
 .dark-bg-hero {
     background-color: $bg-dark-cl;
-    width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
-    background-image: linear-gradient(to right,  rgba(47, 48, 58, 0.4),  
-        rgba(47, 48, 58, 0.4)), url("../images/hero.jpg"); 
+    
+     
     background-size: cover;
     background-position: center;
 
+    @media screen and (min-width:480px) and (max-width:767px) {
+        margin-bottom: 60px;
+        width: 480px;
+        height: 400px;
+        background-image: linear-gradient(to right,  rgba(47, 48, 58, 0.4),  
+        rgba(47, 48, 58, 0.4)), url("../images/hero-mob.jpg");
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        margin-bottom: 60px;
+        width: 768px;
+        height: 400px;
+        background-image: linear-gradient(to right,  rgba(47, 48, 58, 0.4),  
+        rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    }
+
+    @include for-size(desktop) {
+        margin-bottom: 94px;
+        width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right,  rgba(47, 48, 58, 0.4),  
+        rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    }
+    
 }
 
 .button-hero {
@@ -42,15 +63,41 @@
 .page-title{
     font-family: Roboto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $wight-text-cl;
-    padding-top: 200px;
-    padding-right: 452px;
-    padding-left: 452px;
-    padding-bottom: 30px;
+    
     margin: 0px;
+
+    @media screen and (min-width:480px) and (max-width:767px) {
+        padding-top: 118px;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-bottom: 30px;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding-top: 118px;
+        padding-right: 204px;
+        padding-left: 204px;
+        padding-bottom: 30px;
+    } 
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        font-size: 26px;
+        line-height: 1.62;
+    }
+
+    @include for-size(desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+        padding-top: 200px;
+        padding-right: 452px;
+        padding-left: 452px;
+        padding-bottom: 30px;
+
+    }
+
 }

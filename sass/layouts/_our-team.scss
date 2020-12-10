@@ -29,9 +29,20 @@
     border-radius: 0px 0px 4px 4px;
     /* добавил делая стили для мобайл*/
     margin-bottom: 30px;
-  
+
+    @media screen and (min-width:480px) and (max-width: 767px) {
+        width: 450px;
+        // height: 622px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
     @media screen and (min-width:768px) and (max-width: 1199px) {
         width: 354px;
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0px;
+        }
     }
 
     @include for-size(desktop) {
