@@ -459,14 +459,13 @@ img {
 }
 
 .menu-mobile {
+  background-color: #FFFFFF;
   padding-top: 60px;
   padding-bottom: 60px;
   position: absolute;
   left: 0;
   right: 0;
   border-top: 1px solid #ECECEC;
-  opacity: 0;
-  visibility: hidden;
 }
 
 @media (min-width: 768px) {
