@@ -1,13 +1,25 @@
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     border-radius: 4px;
     background-color: $wight-text-cl;
     transition: transform $time-transition;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @include for-size(desktop) {
+        width: 528px;
+        height: 581px;
+    }
+
+
+
 }
 
 .backdrop {
@@ -61,13 +73,24 @@
 .title-modal {
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.15;
+    
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-text-cl;
     padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 0px;
     margin-bottom: 2px;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        line-height: 1.5;
+    }
+
+    @include for-size(desktop) {
+        line-height: 1.15;
+    }
+
 }
 
 .modal-icons-svg {

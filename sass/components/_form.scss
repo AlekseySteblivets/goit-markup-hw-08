@@ -11,7 +11,6 @@
 
 .form-input {
     display: inline-block;
-    width: 448px;
     height: 40px;
     margin-right: 40px;
     margin-left: 40px;
@@ -21,13 +20,21 @@
     cursor: pointer;
     outline: none;
     transition: border-color $time-transition;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 370px;
+    }
+
+    @include for-size(desktop) {
+        width: 448px;
+    }
+
 }
 
 
 .form-textarea {
     display: inline-block;
     /* resize: none; */
-    width: 448px;
     height: 120px;
     margin-right: 40px;
     margin-left: 40px;
@@ -42,6 +49,15 @@
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        width: 370px;
+    }
+
+    @include for-size(desktop) {
+        width: 448px;
+    }
+
 }
 
 .form-input:focus + .modal-icons-svg {
@@ -76,7 +92,7 @@
 
 .checkbox-icon {
     position: absolute;
-    top: 24px;
+    
     left: 51px;
     display: inline-block;
     width: 16px;
@@ -84,6 +100,15 @@
     background-image: url(../images/checkbox.svg);
     background-position: center;
     z-index: -1;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        top: 19px;
+    }
+
+    @include for-size(desktop) {
+        top: 24px;
+    }    
+    
 }
 
 
@@ -94,9 +119,19 @@
     margin-top: 20px;
     margin-bottom: 30px;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
+
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    @include for-size(desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }    
+
 }
 
 .color-check-text {
