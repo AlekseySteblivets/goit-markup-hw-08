@@ -138,19 +138,12 @@
                 <h2 class="section-title">Наша команда</h2>
                     <ul class="list team-list">
                         <li class="team-item">
-                            <img srcset="
-                                ./images/mobile/mob-img3-450.jpg 1x,
-                                ./images/mobile/mob-img3-450@2x.jpg 2x,
-                                ./images/tablet/tablet-img3-354.jpg 1x,
-                                ./images/tablet/tablet-img3-354@2x.jpg 2x,
-                                ./images/desktop/desktop-img3-270.jpg 1x,
-                                ./images/desktop/desktop-img3-270@2x.jpg 2x"
-                                sizes="
-                                450px, 450px, 354px, 354px, 270px, 270px"
-
-                            
-                            src="./images/desktop/desktop-img3-270.jpg" alt="наш сотрудник" 
-                            width="270">
+                            <picture>
+                                <source srcset="./images/desktop/desktop-img3-270.jpg 1x, ./images/desktop/desktop-img3-270@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/tablet-img3-354.jpg 1x, ./images/tablet/tablet-img3-354@2x.jpg 2x," media="(min-width: 768px)"> 
+                                <source srcset="./images/mobile/mob-img3-450.jpg 1x, ./images/mobile/mob-img3-450@2x.jpg 2x" media="(min-width: 480px)">     
+                                <img src="./images/desktop/desktop-img3-270.jpg" alt="наш сотрудник">
+                            </picture>
                             <h3 class="team-name-tittle">Игорь Демьяненко</h3>
                             <p>Product Designer</p>   
                             <ul class="list social-icons">
@@ -185,8 +178,12 @@
                             </ul>             
                         </li>
                         <li class="team-item">
-                            <img src="./images/img4.jpg" alt="наш сотрудник"
-                            width="270">
+                            <picture>
+                                <source srcset="./images/desktop/desktop-img4-270.jpg 1x, ./images/desktop/desktop-img4-270@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/tablet-img4-354.jpg 1x, ./images/tablet/tablet-img4-354@2x.jpg 2x," media="(min-width: 768px)"> 
+                                <source srcset="./images/mobile/mob-img4-450.jpg 1x, ./images/mobile/mob-img4-450@2x.jpg 2x" media="(min-width: 480px)">     
+                                <img src="./images/desktop/desktop-img4-270.jpg" alt="наш сотрудник">
+                            </picture>
                             <h3 class="team-name-tittle">Ольга Репина</h3>
                             <p>Frontend Developer</p>
                             <ul class="list social-icons">
@@ -221,8 +218,12 @@
                             </ul>                            
                         </li>    
                         <li class="team-item">
-                            <img src="./images/img5.jpg" alt="наш сотрудник" 
-                            width="270">
+                            <picture>
+                                <source srcset="./images/desktop/desktop-img5-270.jpg 1x, ./images/desktop/desktop-img5-270@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/tablet-img5-354.jpg 1x, ./images/tablet/tablet-img5-354@2x.jpg 2x," media="(min-width: 768px)"> 
+                                <source srcset="./images/mobile/mob-img5-450.jpg 1x, ./images/mobile/mob-img5-450@2x.jpg 2x" media="(min-width: 480px)">     
+                                <img src="./images/desktop/desktop-img5-270.jpg" alt="наш сотрудник">
+                            </picture>
                             <h3 class="team-name-tittle">Николай Тарасов</h3>
                             <p>Marketing</p>
                             <ul class="list social-icons">
@@ -257,8 +258,12 @@
                             </ul>
                         </li>    
                         <li class="team-item">
-                            <img src="./images/img6.jpg" alt="наш сотрудник" 
-                            width="270">
+                            <picture>
+                                <source srcset="./images/desktop/desktop-img6-270.jpg 1x, ./images/desktop/desktop-img6-270@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/tablet/tablet-img6-354.jpg 1x, ./images/tablet/tablet-img6-354@2x.jpg 2x," media="(min-width: 768px)"> 
+                                <source srcset="./images/mobile/mob-img6-450.jpg 1x, ./images/mobile/mob-img6-450@2x.jpg 2x" media="(min-width: 480px)">     
+                                <img src="./images/desktop/desktop-img6-270.jpg" alt="наш сотрудник">
+                            </picture>
                             <h3 class="team-name-tittle">Михаил Ермаков</h3>
                             <p>UI Designer</p>
                             <ul class="list social-icons">
@@ -459,3 +464,22 @@
     <script src="./js/menu.js"></script>
 </body>
 </html>
+
+<!-- <source 
+    srcset="
+    ./images/comand/desktop/igor-270.webp 1x,
+    ./images/comand/desktop/igor-270-2x.webp 2x" 
+
+    media="(min-width: 1200px)" 
+    type="image/webp" />
+
+<source 
+    srcset="
+    ./images/comand/tablet/igor-354.webp 1x, 
+    ./images/comand/tablet/igor-354-2x.webp 2x" 
+    media="(min-width: 768px)" 
+    type="image/webp" />
+
+<source srcset="./images/comand/mob/igor-480.webp 1x, ./images/comand/mob/igor-480-2x.webp 2x, ./images/comand/mob/igor-480-3x.webp 3x" 
+media="(min-width: 480px)" 
+type="image/webp" /> -->
