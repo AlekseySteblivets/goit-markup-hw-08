@@ -45,7 +45,7 @@
     display: inline-block;
     right: 8px;
     top: 8px;
-    background-color: var ($wight-text-cl);
+    background-color: $wight-text-cl;
     /* border: 0; */
     padding: 0;
     cursor: pointer;
@@ -64,8 +64,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-width: 100%;
+    max-height: 100%;
     width: 18px;
-    height: 18px;
+    // height: 18px;
     transition: fill $time-transition;
 }
 

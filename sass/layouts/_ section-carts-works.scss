@@ -39,7 +39,10 @@
 
     @media screen and (min-width:768px) and (max-width: 1199px) {
         width: 354px;
-        flex-basis: calc(100% / 2 - 20px);
+        // flex-basis: calc(100% / 2 - 20px);
+        &:first-child {
+            margin-bottom: 66px;
+        }
         &:last-child {
             margin-bottom: 0px;
         }
@@ -47,7 +50,7 @@
     }
 
     @include for-size(desktop) {
-        flex-basis: calc(100% / 3 - 20px);
+        // flex-basis: calc(100% / 3 - 20px);
         width: 370px;
 
         &:nth-last-child(-n + 3) {

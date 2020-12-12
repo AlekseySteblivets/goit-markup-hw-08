@@ -8,10 +8,9 @@
     letter-spacing: 0.03em;
     color: $title-text-cl;
     border-radius: 4px;
+    border: none;
     background-color: $bg-section-cl;
     padding: 0px;
-    
-    border: 0px;
     transition: background-color $time-transition;
     &:hover,
     &:focus {
