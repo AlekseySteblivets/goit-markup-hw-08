@@ -707,14 +707,21 @@ img {
   background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
+  width: 480px;
+  min-width: 480px;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 481px) {
+  .dark-bg-hero {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .dark-bg-hero {
     margin-bottom: 60px;
-    width: 480px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob.jpg");
   }
@@ -729,7 +736,6 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .dark-bg-hero {
     margin-bottom: 60px;
-    width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
   }
