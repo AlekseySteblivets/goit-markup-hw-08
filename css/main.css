@@ -499,6 +499,7 @@ img {
 
 .but-menu-mobile {
   display: block;
+  cursor: pointer;
   background-color: #FFFFFF;
   /* border: 0; */
   padding: 0;
@@ -971,6 +972,7 @@ img {
 .futer-btn {
   position: relative;
   display: inline-block;
+  cursor: pointer;
   width: 200px;
   height: 50px;
   border-radius: 4px;
