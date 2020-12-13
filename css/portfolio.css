@@ -544,13 +544,13 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .futer-social {
     margin-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .futer-social {
     align-items: center;
   }
@@ -569,7 +569,7 @@ img {
   flex-direction: column;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .futer-contacts {
     align-items: center;
     margin-bottom: 60px;
@@ -602,7 +602,7 @@ img {
   flex-direction: column;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .futer-input-section {
     align-items: center;
   }
@@ -626,7 +626,7 @@ img {
   display: flex;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .futer-form {
     align-items: center;
     flex-direction: column;
@@ -648,7 +648,7 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .futer-input {
     margin-bottom: 20px;
     width: 450px;
@@ -733,7 +733,7 @@ img {
   padding-bottom: 0px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .section-contacts .container {
     flex-direction: column;
   }
