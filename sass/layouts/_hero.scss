@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: center;
 
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (max-width:767px) {
         margin-bottom: 60px;
         width: 480px;
         height: 400px;
@@ -95,7 +95,7 @@
     
     margin: 0px;
 
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (max-width:767px) {
         padding-top: 118px;
         padding-right: 60px;
         padding-left: 60px;
@@ -109,7 +109,7 @@
         padding-bottom: 30px;
     } 
 
-    @media screen and (min-width:480px) and (max-width:1199px) {
+    @media screen and (max-width:1199px) {
         font-size: 26px;
         line-height: 1.62;
     }

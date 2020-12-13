@@ -2,6 +2,10 @@
     background-color: $bg-dark-cl;
     margin-left: auto;
     margin-right: auto;
+    width: 480px;
+    @media screen and (min-width: 481px) {
+        width: 100%;
+    }
 
 
 

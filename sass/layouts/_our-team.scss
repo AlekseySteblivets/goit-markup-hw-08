@@ -3,6 +3,10 @@
     background-color: $bg-section-cl;
     margin-left: auto;
     margin-right: auto;
+    width: 480px;
+    @media screen and (min-width: 481px) {
+        width: 100%;
+    }
 }
 
 /* класс для ul в сетке*/
@@ -39,7 +43,7 @@
         margin-top: 0px;
     }
 
-    @media screen and (min-width:480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         width: 450px;
         // height: 622px;
         &:last-child {

@@ -52,9 +52,9 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%;
+    // width: 100%;
 
-    @include for-size(mobile) {
+    @media screen and (max-width:767px) {
         width: 480px;
     }
 

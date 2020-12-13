@@ -7,7 +7,7 @@
     color: $title-text-cl;
     margin-top: 0px;
 
-    @media screen and (min-width:480px) and (max-width:1199px) {
+    @media screen and (max-width:1199px) {
         font-size: 28px;
         padding-top: 60px;
         margin-bottom: 30px;
@@ -29,7 +29,7 @@
     border-radius: 4px;
     transition: border $time-transition;
 
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (max-width:767px) {
         width: 210px;
     }
     @media screen and (min-width:767px) and (max-width:1199px) {
@@ -59,7 +59,7 @@
     // margin-right: 0px;
     
 
-    @media screen and (min-width:480px) and (max-width:767px) {
+    @media screen and (max-width:767px) {
         margin-bottom: 30px;
 
         &:nth-last-child(-n + 2) {
