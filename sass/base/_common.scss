@@ -55,7 +55,7 @@ img {
     // width: 100%;
 
     @media screen and (max-width:767px) {
-        width: 480px;
+        max-width: 480px;
     }
 
     @include for-size(tablet) {
