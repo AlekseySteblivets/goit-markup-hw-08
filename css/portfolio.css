@@ -31,6 +31,7 @@ body {
 ::after,
 ::before {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 html {
@@ -651,10 +652,15 @@ img {
   border-radius: 4px;
 }
 
+@media (min-width: 480px) {
+  .futer-input {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .futer-input {
     margin-bottom: 20px;
-    width: 450px;
   }
 }
 

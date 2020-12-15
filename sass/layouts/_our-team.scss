@@ -3,7 +3,7 @@
     background-color: $bg-section-cl;
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
+    width: 100%;
     @media screen and (min-width: 481px) {
         width: 100%;
     }
@@ -44,7 +44,7 @@
     }
 
     @media screen and (max-width: 767px) {
-        width: 450px;
+        width: 100%;
         // height: 622px;
         &:last-child {
             margin-bottom: 0px;

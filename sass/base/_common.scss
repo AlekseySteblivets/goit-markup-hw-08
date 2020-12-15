@@ -12,7 +12,7 @@ body{
 ::after,
 ::before {
     box-sizing: inherit;
-    // outline: 2px solid red;
+    outline: 2px solid red;
 }
 
 html {
@@ -55,7 +55,7 @@ img {
     // width: 100%;
 
     @media screen and (max-width:767px) {
-        max-width: 480px;
+       max-width: 480px;
     }
 
     @include for-size(tablet) {

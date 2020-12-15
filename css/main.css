@@ -31,6 +31,7 @@ body {
 ::after,
 ::before {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 html {
@@ -711,8 +712,6 @@ img {
   background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
-  min-width: 480px;
   background-size: cover;
   background-position: center;
 }
@@ -817,6 +816,12 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
   padding-top: 118px;
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -947,10 +952,15 @@ img {
   border-radius: 4px;
 }
 
+@media (min-width: 480px) {
+  .futer-input {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .futer-input {
     margin-bottom: 20px;
-    width: 450px;
   }
 }
 
@@ -1221,7 +1231,7 @@ img {
   background-color: #EEEEEE;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  width: 100%;
 }
 
 @media screen and (min-width: 481px) {
@@ -1265,7 +1275,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .team-item {
-    width: 450px;
+    width: 100%;
   }
   .team-item:last-child {
     margin-bottom: 0px;
