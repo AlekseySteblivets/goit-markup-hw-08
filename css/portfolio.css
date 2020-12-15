@@ -31,7 +31,6 @@ body {
 ::after,
 ::before {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 html {
@@ -919,7 +918,6 @@ img {
   background-color: #2F303A;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
 }
 
 @media screen and (min-width: 481px) {
